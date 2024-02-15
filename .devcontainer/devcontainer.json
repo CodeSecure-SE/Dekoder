@@ -1,12 +1,12 @@
 {
-	"image": "codesecurese/kotlin-cso-builder:8.1b0",
+	"image": "codesecurese/dekoder-cso-builder:8.1b0",
 	"mounts" : [
 		"source=${localEnv:HOME}/.csurf,target=/home/user/.csurf,type=bind",
 		"source=${localEnv:HOME}/.ssh,target=/home/user/.ssh,type=bind"
 		],
 	"features": {},
 
-	"onCreateCommand": ".devcontainer/setup.sh",
+	"onCreateCommand": "",
 	"postCreateCommand": "",
 
 	"customizations": {
@@ -14,7 +14,8 @@
 			"extensions": [
 				"mathiasfrohlich.kotl",
 				"vscjava.vscode-gradle",
-				"vscjava.vscode-java-pack"
+				"vscjava.vscode-java-pack",
+				"codesecure.vscode-codesonar"
 			],
 			"settings": {}
 		}
